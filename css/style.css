@@ -221,20 +221,18 @@ h5 {
   text-transform: capitalize;
   margin-bottom: auto;
 }
-.contact-box form div input{
+.contact-box form div input {
   margin-bottom: 20px !important;
   color: #fcfc !important;
   background-color: #191919 !important;
   border: 1px solid #f9004d !important;
-
 }
 .contact-box form div input::placeholder {
   color: #f9004d;
 }
-.contact-box form div input:hover{
+.contact-box form div input:hover {
   border: 1px solid #fcfc !important;
 }
-
 
 .contact-box form div textarea {
   margin-bottom: 20px !important;
@@ -245,7 +243,7 @@ h5 {
 .contact-box form div textarea::placeholder {
   color: #f9004d !important;
 }
-.contact-box form div textarea:hover{
+.contact-box form div textarea:hover {
   border: 1px solid #fcfc !important;
 }
 .form-btn {
@@ -263,6 +261,26 @@ h5 {
   height: auto;
   width: 430px;
   color: #000;
+}
+#error_name {
+  color: #fcfc;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+#error_email {
+  color: #fcfc;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+#error_message {
+  color: #fcfc;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+#success_message {
+  color: rgba(1, 255, 35, 0.8);
+  font-size: 14px;
+  transition: all 0.5s ease;
 }
 
 /* Footer Section */
@@ -317,9 +335,14 @@ h5 {
   background-color: #101010;
   color: #f9004d;
   text-align: center;
-  padding-top: 1.9vmax;
-  padding-bottom: 0.8vmax;
+  padding-top: 1.2vmax;
+  padding-bottom: 1vmax;
 }
+.copyright-footer a{
+  color: #f9004d;
+  text-decoration: none;
+}
+
 
 @media screen and (max-width: 600px) {
   .navbar div a {
@@ -360,7 +383,7 @@ h5 {
   .card {
     width: 300px;
     margin-bottom: 40px;
-  } 
+  }
   .skill-box {
     max-width: 100%;
     width: 300px;
@@ -384,7 +407,7 @@ h5 {
   }
 
   .contact-form div h3 {
-    font-size: 50px;
+    font-size: 60px;
   }
   .footer-container p:nth-last-child(2) {
     width: 300px;

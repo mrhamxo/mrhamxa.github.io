@@ -220,9 +220,9 @@ h5 {
   font-size: 18px;
   text-transform: capitalize;
   margin-bottom: auto;
+  margin-top: 20px;
 }
 .contact-box form div input {
-  margin-bottom: 20px !important;
   color: #fcfc !important;
   background-color: #191919 !important;
   border: 1px solid #f9004d !important;
@@ -235,7 +235,6 @@ h5 {
 }
 
 .contact-box form div textarea {
-  margin-bottom: 20px !important;
   color: #fcfc !important;
   background-color: #191919 !important;
   border: 1px solid #f9004d !important;
@@ -250,6 +249,7 @@ h5 {
   color: #f9004d;
   border: 1px solid #f9004d;
   background-color: 101010;
+  margin-top: 20px;
 }
 .form-btn:hover {
   color: white !important;

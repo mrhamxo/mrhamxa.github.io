@@ -338,11 +338,10 @@ h5 {
   padding-top: 1.2vmax;
   padding-bottom: 1vmax;
 }
-.copyright-footer a{
+.copyright-footer a {
   color: #f9004d;
   text-decoration: none;
 }
-
 
 @media screen and (max-width: 600px) {
   .navbar div a {
@@ -371,10 +370,16 @@ h5 {
     margin-bottom: 50px;
   }
   .about-text h2 {
-    font-size: 60px;
+    font-size: 40px;
+    text-align: center;
   }
+  .about-text h5 {
+  font-size: 20px;
+
+  }
+
   .title h2 {
-    font-size: 60px;
+    font-size: 40px;
   }
   .service-box {
     display: flex;
@@ -387,6 +392,12 @@ h5 {
   .skill-box {
     max-width: 100%;
     width: 300px;
+  }
+  .skill-title h2 {
+    font-size: 40px;
+  }
+  .skill-box h5 {
+    font-size: 18px;
   }
   .contact-form {
     display: flex;
@@ -407,7 +418,8 @@ h5 {
   }
 
   .contact-form div h3 {
-    font-size: 60px;
+    font-size: 40px;
+    text-align: center;
   }
   .footer-container p:nth-last-child(2) {
     width: 300px;

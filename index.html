@@ -32,9 +32,15 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
+    <!--Preloader section-->
+    <!-- <div id="preloader">
+      <div id="pre-status">
+        <div class="preload-placeholder"></div>
+      </div>
+    </div> -->
     <!-- Section Navbar -->
     <div class="bg-image">
-      <nav class="navbar navbar-expand-lg navbar-light py-4">
+      <nav class="sticky navbar navbar-expand-lg navbar-light py-4">
         <div class="container-fluid">
           <a class="navbar-brand logo" href="#">Portfolio</a>
           <button
@@ -51,19 +57,22 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0 navbar-item">
               <li class="nav-item mx-3">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="/">Home</a>
               </li>
               <li class="nav-item mx-4">
-                <a class="nav-link" href="">About Us</a>
+                <a class="nav-link" href="#about">About Us</a>
               </li>
               <li class="nav-item mx-4">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#experience-education">Experience & Education</a>
               </li>
               <li class="nav-item mx-4">
-                <a class="nav-link" href="#">Skills</a>
+                <a class="nav-link" href="#service">Services</a>
               </li>
               <li class="nav-item mx-4">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link" href="#contact">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -78,16 +87,20 @@
           <p>
             I have completed Software Engineering from Islamia College
             university Peshawar.
-            <!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-            similique dolores libero et ratione. Debitis similique dolores
-            libero et ratione. -->
           </p>
+          <a
+            href="https://drive.google.com/file/d/1_eoVrOUe3fFLFWSMwy3uxvbp_nZiJrXt/view?usp=sharing"
+            download="Hamza CV"
+            type="file"
+            class="btn about-btn"
+            >Download CV</a
+          >
         </div>
       </div>
     </div>
 
     <!-- About section -->
-    <section class="about">
+    <section class="about" id="about">
       <img src="images/about_me.png" />
       <div class="main">
         <div class="about-text">
@@ -111,13 +124,118 @@
         </div>
       </div>
     </section>
+    <!-- Experience & Eduction section -->
+    <div class="experience-education">
+      <div class="experience-box" id="experience-education">
+        <h2>Experiences</h2>
+        <div class="timelines">
+          <div class="timeline-wrapper">
+            <div class="timeline-title">
+              <span>2022</span>
+            </div>
+            <div class="timeline-info">
+              <h3><span>Project Manager</span><small>Best Studio</small></h3>
+              <div>
+                <p>Proin ornare non purus ut rutrum. Nulla facilisi.</p>
+                <p>
+                  laoreet libero ac pharetra feugiat. Cras ac fermentum nunc,
+                  afaucibus nunc.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-wrapper">
+            <div class="timeline-title">
+              <span>2021</span>
+            </div>
+            <div class="timeline-info">
+              <h3><span>Project Manager</span><small>Best Studio</small></h3>
+              <div>
+                <p>Proin ornare non purus ut rutrum. Nulla facilisi.</p>
+                <p>
+                  laoreet libero ac pharetra feugiat. Cras ac fermentum nunc,
+                  afaucibus nunc.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-wrapper">
+            <div class="timeline-title">
+              <span>2020</span>
+            </div>
+            <div class="timeline-info">
+              <h3><span>Project Manager</span><small>Best Studio</small></h3>
+              <div>
+                <p>Proin ornare non purus ut rutrum. Nulla facilisi.</p>
+                <p>
+                  laoreet libero ac pharetra feugiat. Cras ac fermentum nunc,
+                  afaucibus nunc.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education sub section -->
+      <div class="education-box">
+        <h2>Educations</h2>
+        <div class="timelines">
+          <div class="timeline-wrapper">
+            <div class="timeline-title">
+              <span>BS</span>
+            </div>
+            <div class="timeline-info">
+              <h3>
+                <span>Software Engineering</span><small>2018 - 2022</small>
+              </h3>
+              <div>
+                <p>Islamia College University Peshawar</p>
+                <p>
+                  <span>CGPA:</span> 3.1 <br /><span>Percentage:</span> 77.5%
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-wrapper">
+            <div class="timeline-title">
+              <span>FSC</span>
+            </div>
+            <div class="timeline-info">
+              <h3><span>Pre-Engineering</span><small>2014 - 2016</small></h3>
+              <div>
+                <p>Wisdom Science College Chokara Karak</p>
+                <p>
+                  <span>Marks:</span> 942/1100 <br /><span>Percentage:</span>
+                  85.6%
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-wrapper">
+            <div class="timeline-title">
+              <span>Matric</span>
+            </div>
+            <div class="timeline-info">
+              <h3><span>Science Groups</span><small>2012 - 2014</small></h3>
+              <div>
+                <p>Wisdom Science College Chokara Karak</p>
+                <p>
+                  <span>Marks:</span> 962/1100 <br /><span>Percentage:</span>
+                  87.4%
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Services Section -->
     <div class="service">
-      <div class="title">
+      <div class="title" id="service">
         <h2>Our Services</h2>
       </div>
-
       <div class="service-box">
         <div class="card">
           <i class="fa fa-file-code"></i>
@@ -170,7 +288,7 @@
     </div>
 
     <!-- Growth Rate Section -->
-    <div class="skill-container">
+    <div class="skill-container" id="skills">
       <div class="skill-title">
         <h2>Skills</h2>
       </div>
@@ -249,60 +367,97 @@
     </div>
 
     <!-- Contact Form section -->
-    <div class="contact-form">
-      <div class="contact-box">
-        <h3>Contact Us</h3>
-        <form onsubmit="return validateForm()">
-          <div>
-            <label for="name" class="form-label">Full Name</label>
-            <input
-              name="Name"
-              id="name"
-              type="text"
-              class="form-control"
-              id="name"
-              placeholder="Enter your full name"
-            />
-            <div id="error_name"></div>
+    <div class="contact-container" id="contact">
+      <h3>Contact Us</h3>
+      <!-- contact us info -->
+      <div class="contact-form">
+        <div class="contact-box">
+          <form onsubmit="return validateForm()">
+            <div>
+              <label for="name" class="form-label">Full Name</label>
+              <input
+                name="Name"
+                id="name"
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter your full name"
+              />
+              <div id="error_name"></div>
+            </div>
+            <div>
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                name="Email"
+                id="email"
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter your email address"
+              />
+              <div id="error_email"></div>
+            </div>
+            <div>
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Message</label
+              >
+              <textarea
+                name="Message"
+                id="message"
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                placeholder="Write description..."
+                rows="3"
+              ></textarea>
+              <div id="error_message"></div>
+            </div>
+            <button type="submit" class="btn form-btn">Hire Me</button>
+            <div id="success_message"></div>
+          </form>
+        </div>
+        <!-- address info -->
+        <div class="address-from">
+          <h4>Get in Touch</h4>
+          <div class="address-info">
+            <div>
+              <i class="fa fa-map-marked-alt"></i>
+              <h6><strong>Address:</strong> Post Office Chokara Karak</h6>
+            </div>
+            <div>
+              <i class="fa fa-envelope"></i>
+              <h6>
+                <strong>Mail Us:</strong>
+                <a href="mailto:mr.hamxa942@gmail.com">mr.hamxa942@gmail.com</a>
+              </h6>
+            </div>
+            <div>
+              <i class="fa fa-mobile-alt"></i>
+              <h6><strong>Phone No:</strong> +92 335-958-8458</h6>
+            </div>
+            <div>
+              <i class="fa fa-address-card"></i>
+              <h6><strong>Website:</strong><a href="#">www.hamza.com</a></h6>
+            </div>
           </div>
-          <div>
-            <label for="exampleInputEmail1" class="form-label"
-              >Email address</label
-            >
-            <input
-              name="Email"
-              id="email"
-              type="email"
-              class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-              placeholder="Enter your email address"
-            />
-            <div id="error_email"></div>
+          <div class="social">
+            <a
+              href="https://www.linkedin.com/in/muhammad-hamza-khattak-8002b718b/"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="https://web.facebook.com/mr.hamxa942" target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://twitter.com/hamzaktk485" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
           </div>
-          <div>
-            <label for="exampleFormControlTextarea1" class="form-label"
-              >Message</label
-            >
-            <textarea
-              name="Message"
-              id="message"
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              placeholder="Write description..."
-              rows="3"
-            ></textarea>
-            <div id="error_message"></div>
-          </div>
-          <button type="submit" class="btn form-btn">Hire Me</button>
-          <div id="success_message"></div>
-        </form>
-      </div>
-      <div class="contact-img">
-        <img src="images/image.png" />
+        </div>
       </div>
     </div>
-
     <!-- Footer Section -->
     <div class="footer-container">
       <p>Muhammad Hamza Khattak</p>

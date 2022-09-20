@@ -1,3 +1,4 @@
+// display loader before page loads
 (function () {
   $(window).load(function () {
     $("#pre-status").fadeOut();

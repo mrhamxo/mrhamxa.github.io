@@ -1,28 +1,28 @@
 // Contact From Validation
-function validateForm() {
+function validate() {
   var name = document.getElementById("name").value;
   var email = document.getElementById("email").value;
   var message = document.getElementById("message").value;
-  var error_message = document.getElementById("error_name");
-  var error_message = document.getElementById("error_email");
   var error_message = document.getElementById("error_message");
   var success_message = document.getElementById("success_message");
+  var regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
+  var regName = /\d+$/g;
 
-  // error_message.style.padding = "10px";
+  error_message.style.padding = "7px";
 
   var text;
-  if (name.length < 3) {
+  if (name == "" || regName.test(name)) {
     text = "Please Enter valid Name";
-    error_name.innerHTML = text;
+    error_message.innerHTML = text;
     return false;
   }
-  if (email.indexOf("@") == -1 || email.length < 6) {
+  if (email == "" || !regEmail.test(email)) {
     text = "Please Enter valid Email";
-    error_email.innerHTML = text;
+    error_message.innerHTML = text;
     return false;
   }
-  if (message.length <= 10) {
-    text = "Please Enter Your Message";
+  if (message.length < 8) {
+    text = "Please Enter YOur Message";
     error_message.innerHTML = text;
     return false;
   }
@@ -30,3 +30,12 @@ function validateForm() {
   success_message.innerHTML = text;
   return true;
 }
+
+
+
+(function () {
+  $(window).load(function () {
+    $("#pre-status").fadeOut();
+    $("#preloader").delay(350).fadeOut("slow");
+  });
+})();

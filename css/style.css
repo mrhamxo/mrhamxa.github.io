@@ -29,7 +29,10 @@ html {
   scroll-behavior: smooth;
 }
 /* Preloader section */
-/* #preloader {
+body div {
+  display: block;
+}
+#preloader {
   background: #fff;
   bottom: 0;
   left: 0;
@@ -41,7 +44,7 @@ html {
 #pre-status,
 .preload-placeholder {
   overflow: hidden;
-  background-image: url(../images/preloader.gif);
+  background-image: url(/images/preloader.gif);
   background-position: center;
   background-repeat: no-repeat;
   height: 296px;
@@ -57,7 +60,8 @@ html {
   margin: 0;
   text-align: center;
   top: 65%;
-} */
+}
+
 /* Navbar Section */
 .bg-image {
   height: 100vh;
@@ -364,7 +368,17 @@ h5 {
   padding: 40px;
   max-width: 100%;
   width: 700px;
-  /* margin: 0 60px; */
+}
+.input-form {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  appearance: none;
+  border-radius: 0.375rem;
 }
 .contact-box form div label {
   color: white;
@@ -376,7 +390,7 @@ h5 {
 }
 .contact-box form div input {
   color: #fcfc !important;
-  background-color: #191919 !important;
+  background-color: #101010 !important;
   border: 1px solid #f9004d !important;
   transition: 0.7s all !important;
 }
@@ -390,7 +404,7 @@ h5 {
 .contact-box form div textarea {
   color: #fcfc !important;
   transition: 0.7s all !important;
-  background-color: #191919 !important;
+  background-color: #101010 !important;
   border: 1px solid #f9004d !important;
 }
 .contact-box form div textarea::placeholder {
@@ -445,28 +459,18 @@ h5 {
   color: #fcfc;
   text-decoration: none;
 }
-
-#error_name {
-  color: #fcfc;
+#error_message{
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
   font-size: 14px;
   transition: all 0.5s ease;
 }
-#error_email {
-  color: #fcfc;
+#success_message{
   font-size: 14px;
+  color: green;
   transition: all 0.5s ease;
 }
-#error_message {
-  color: #fcfc;
-  font-size: 14px;
-  transition: all 0.5s ease;
-}
-#success_message {
-  color: rgba(1, 255, 35, 0.8);
-  font-size: 14px;
-  transition: all 0.5s ease;
-}
-
 /* Footer Section */
 .footer-container {
   position: relative;

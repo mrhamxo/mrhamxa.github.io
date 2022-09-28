@@ -389,7 +389,8 @@
       <div class="contact-form">
         <div class="contact-box">
           <div id="error_message"></div>
-          <form action="javascript:sendmail()" onsubmit="return validate();">
+          <!-- <form action="javascript:sendmail()" "> -->
+          <form method="post" id="formSubmit" onsubmit="return validate();">
             <div>
               <label for="Name" class="input-label">Full Name</label>
               <input
@@ -420,7 +421,7 @@
                 rows="3"
               ></textarea>
             </div>
-            <button type="submit" class="btn form-btn">Hire Me</button>
+            <button type="submit" id="btnSubmit" class="btn form-btn">Hire Me</button>
             <div id="success_message"></div>
           </form>
         </div>

@@ -24,7 +24,7 @@ body div {
 #pre-status,
 .preload-placeholder {
   overflow: hidden;
-  background-image: url(/images/preloader.gif);
+  background-image: url(/images/loading.gif);
   background-position: center;
   background-repeat: no-repeat;
   height: 296px;
